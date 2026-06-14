@@ -1,0 +1,12 @@
+{
+  "hero_title": "Unlock the wisdom of the cards",
+  "hero_subtitle": "Personal readings · Spiritual guidance · Energy healing",
+  "hero_badge": "Trusted tarot readings since 2015",
+  "btn_primary": "Book a reading",
+  "btn_secondary": "Explore services",
+  "features": [
+    { "icon": "🌙", "title": "Love & Relationships", "desc": "Clarity on heart matters, past wounds, and future paths." },
+    { "icon": "💼", "title": "Career & Purpose", "desc": "Align your work with your soul's deeper calling." },
+    { "icon": "∞", "title": "Spiritual Growth", "desc": "Deep dives into energy, intuition, and life cycles." }
+  ]
+}

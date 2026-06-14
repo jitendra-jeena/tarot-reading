@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luna Tarot</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">✦ Luna Tarot</a>
+  <ul class="nav-links"></ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-moon"></div>
+    <p class="hero-badge" id="hero-badge"></p>
+    <h1 id="hero-title"></h1>
+    <p class="hero-sub" id="hero-sub"></p>
+    <a href="contact.html" class="btn-primary" id="btn-primary"></a>
+    <a href="services.html" class="btn-secondary" id="btn-secondary"></a>
+    <div class="hero-cards">
+      <div class="tarot-card left">☽</div>
+      <div class="tarot-card center">★</div>
+      <div class="tarot-card right">☀</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-center">
+    <span class="section-chip">What I offer</span>
+    <h2>Readings for every journey</h2>
+    <p class="section-sub">Choose the guidance that speaks to you</p>
+  </div>
+  <div class="feat-grid" id="feat-grid"></div>
+</section>
+
+<section class="testimonials">
+  <h2>What clients say</h2>
+  <div class="t-grid">
+    <div class="t-card"><div class="t-stars">★★★★★</div><p class="t-text">"Incredibly accurate. She saw things no one else could have known."</p><p class="t-name">— Amara K.</p></div>
+    <div class="t-card"><div class="t-stars">★★★★★</div><p class="t-text">"Life-changing reading. I finally feel clear about my next steps."</p><p class="t-name">— Sofia R.</p></div>
+    <div class="t-card"><div class="t-stars">★★★★★</div><p class="t-text">"Warm, insightful, and so gifted. Booked again already!"</p><p class="t-name">— Lena M.</p></div>
+  </div>
+</section>
+
+<footer><p></p></footer>
+
+<script src="assets/js/main.js"></script>
+<script>
+(async () => {
+  const d = await fetch('config/home.json').then(r => r.json());
+  document.getElementById('hero-badge').textContent = '✦  ' + d.hero_badge + '  ✦';
+  document.getElementById('hero-title').textContent = d.hero_title;
+  document.getElementById('hero-sub').textContent = d.hero_subtitle;
+  document.getElementById('btn-primary').textContent = d.btn_primary;
+  document.getElementById('btn-secondary').textContent = d.btn_secondary;
+  document.getElementById('feat-grid').innerHTML = d.features.map(f =>
+    `<div class="feat-card"><div class="feat-icon">${f.icon}</div><h3>${f.title}</h3><p>${f.desc}</p></div>`
+  ).join('');
+})();
+</script>
+</body>
+</html>
