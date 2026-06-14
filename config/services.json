@@ -1,0 +1,10 @@
+{
+  "page_title": "Choose Your Reading",
+  "page_subtitle": "Services & Pricing",
+  "services": [
+    { "name": "Single Card Reading", "duration": "15 min · via email", "price": "800", "popular": false, "features": ["One focused question", "Written interpretation", "48h delivery"] },
+    { "name": "Celtic Cross Spread", "duration": "45 min · email + call", "price": "2500", "popular": true, "features": ["10-card full spread", "Detailed written report", "30-min follow-up call"] },
+    { "name": "Love & Relationship", "duration": "30 min · via email", "price": "1500", "popular": false, "features": ["Relationship spread", "Past, present & future", "Audio recording included"] },
+    { "name": "Annual Forecast", "duration": "60 min · email + PDF", "price": "3500", "popular": false, "features": ["12-month card spread", "Detailed PDF report", "Priority response"] }
+  ]
+}
